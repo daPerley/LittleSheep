@@ -1,0 +1,72 @@
+﻿@using LittleSheep.Entities
+@using LittleSheep.Products
+@using LittleSheep.Configuration
+
+@{
+    Layout = "~/Pages/Admin/MasterAdmin.cshtml";
+
+    var message = string.Empty;
+
+    if (IsPost)
+    {
+        var category = Request.Form["category"];
+        var name = Request.Form["name"];
+        var description = Request.Form["description"];
+        var price = Request.Form["price"];
+        var units = Request.Form["units"];
+        var imageSource = Request.Form["imageSource"];
+
+        //todo validate on client and server side
+        var product = new Product
+        {
+            Category = category,
+            Name = name,
+            Description = description,
+            Price = Convert.ToDouble(price),
+            Units = Convert.ToInt32(units),
+            ImageSource = imageSource
+        };
+
+        ProductRepository productRepository = new ProductRepository();
+
+        if (productRepository.AddNewProduct(product))
+        {
+            message = "Produkten är tillagd";
+        }
+        else
+        {
+            message = "Tekniskt fel var god läs loggen,/n" + Paths.PathToExceptionLog();
+        }
+    }
+}
+
+<form action="AddProduct.cshtml" method="POST">
+    <label>Kategori</label>
+    <select name="category">
+        <option value="PacifierHolders">Napphållare</option>
+        <option value="StrollerMobiles">Barnvagnsmobiler</option>
+        <option value="StrollerPendants">Barnvagnshängen</option>
+    </select>
+
+    <label>Produktnamn</label>
+    <input name="name">
+
+    <label>Beskrivning</label>
+    <textarea name="description"></textarea>
+
+    <label>Pris</label>
+    <input name="price" type="number">
+
+    <label>Antal</label>
+    <input name="units" type="number">
+
+    <label>Bild</label>
+    <input name="imageSource" type="file" accept="image/*">
+
+    <input id="submit" name="submit" type="submit" value="Lägg till produkt">
+</form>
+
+@if (IsPost)
+{
+    <h2>@message</h2>
+}

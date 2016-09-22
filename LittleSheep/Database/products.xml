@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Products>
+  <Product>
+    <Category>PacifierHolders</Category>
+    <Name>Chevron</Name>
+    <Description>Stilren napphållare med ett chevronmönster i blått och rosa</Description>
+    <Price>99</Price>
+    <Units>1</Units>
+    <ImageSource>noImageFound.jpg</ImageSource>
+  </Product>
+  <Product>
+    <Category>StrollerPendants</Category>
+    <Name>Rockuggla</Name>
+    <Description>Rockigt ugglehänge med blå accentfärg som piggar upp vilken barnvagn som helst!</Description>
+    <Price>75</Price>
+    <Units>1</Units>
+    <ImageSource>noImageFound.jpg</ImageSource>
+  </Product>
+  <Product>
+    <Category>PacifierHolders</Category>
+    <Name>Natur</Name>
+    <Description>Fin napphållare med naturinspirerat tryck med fåglar, giraffer och blad</Description>
+    <Price>99</Price>
+    <Units>1</Units>
+    <ImageSource>noImageFound.jpg</ImageSource>
+  </Product>
+  <Product>
+    <Category>PacifierHolders</Category>
+    <Name>Gröna Jordgubbar</Name>
+    <Description>En fin nästan mintgrön napphållare med jordgubbstryck</Description>
+    <Price>99</Price>
+    <Units>1</Units>
+    <ImageSource>noImageFound.jpg</ImageSource>
+  </Product>
+  <Product>
+    <Category>PacifierHolders</Category>
+    <Name>Rymden</Name>
+    <Description>Napphållare med rymdtryck!</Description>
+    <Price>99</Price>
+    <Units>2</Units>
+    <ImageSource>noImageFound.jpg</ImageSource>
+  </Product>
+  <Product>
+    <Category>PacifierHolders</Category>
+    <Name>Mops</Name>
+    <Description>Söt napphållare med mopstryck</Description>
+    <Price>99</Price>
+    <Units>2</Units>
+    <ImageSource>noImageFound.jpg</ImageSource>
+  </Product>
+</Products>

@@ -1,0 +1,28 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Admin Little Sheep</title>
+</head>
+<body>
+    <header></header>
+    <nav>
+        <ul>
+            <li><a href="~/Pages/Admin/AddPacifierHolder.cshtml">Add new Pacifier Holder</a></li>
+            <li><a href="#">Add new Stroller Accessory</a></li>
+                <ul>
+                    <li><a href="~/Pages/Admin/AddStrollerMobile.cshtml">Add new Stroller Mobile</a></li>
+                    <li><a href="~/Pages/Admin/AddStrollerPendant.cshtml">Add new Stroller Pendant</a></li>
+                </ul>
+        </ul>
+    </nav>
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Users>
+  <User>
+    <FirstName>Perly</FirstName>
+    <LastName>Gustafsson</LastName>
+    <Email>da.perley@yahoo.com</Email>
+    <Street>Nygatan 17B</Street>
+    <ZipCode>64635</ZipCode>
+    <Town>Gnesta</Town>
+    <Password>123</Password>
+  </User>
+</Users>

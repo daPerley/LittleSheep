@@ -1,0 +1,72 @@
+﻿@using LittleSheep.Entities
+@using LittleSheep.Users
+
+@{
+    Layout = "~/Pages/Master.cshtml";
+
+    var message = string.Empty;
+
+    if (IsPost)
+    {
+        var firstName = Request.Form["firstName"];
+        var lastName = Request.Form["lastName"];
+        var email = Request.Form["email"];
+        var street = Request.Form["street"];
+        var zipCode = Request.Form["zipCode"];
+        var town = Request.Form["town"];
+        var password = Request.Form["password"];
+
+        //todo validate on client and server side
+        var user = new User
+        {
+            FirstName = firstName,
+            LastName = lastName,
+            Email = email,
+            Street = street,
+            ZipCode = Convert.ToInt32(zipCode),
+            Town = town,
+            Password = password
+        };
+
+        UserRepository userRepository = new UserRepository();
+
+        if (userRepository.AddNewUser(user))
+        {
+            message = "Kontot är tillagt";
+        }
+        else
+        {
+            message = "Obs, något gick fel, försök igen senare!";
+        }
+    }
+}
+
+<form action="CreateAccount.cshtml" method="POST">
+    <label>Förnamn</label>
+    <input name="firstName">
+
+    <label>Efternamn</label>
+    <input name="lastName">
+
+    <label>E-mail</label>
+    <input name="email" type="email">
+
+    <label>Gatuadress</label>
+    <input name="street">
+
+    <label>Postnummer</label>
+    <input name="zipCode" type="number">
+
+    <label>Postort</label>
+    <input name="town">
+
+    <label>Lösenord</label>
+    <input name="password" type="password" >
+
+    <input id="submit" name="submit" type="submit" value="Skapa konto">
+</form>
+
+@if (IsPost)
+{
+    <h2>@message</h2>
+}

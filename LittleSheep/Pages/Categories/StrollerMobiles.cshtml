@@ -1,0 +1,35 @@
+﻿@using LittleSheep.Configuration;
+@using System;
+@using System.IO;
+@using System.Xml.Linq;
+
+@{
+    Layout = "~/Pages/Master.cshtml";
+}
+
+<div class="section group">
+
+    @try
+    {
+        var products = XDocument.Load(Paths.PathToProductsXml());
+
+        foreach (var product in products.Descendants("Product").Where(product => product.Element("Category").Value == "StrollerMobiles"))
+        {
+            <div class="col">
+                <div class="center"><img class="productImg" src="~/Images/@product.Element("ImageSource").Value" alt="No Image Found" /></div>
+                <div class="productInformation">
+                    <h2>@product.Element("Name").Value</h2><h2>@product.Element("Price").Value SEK</h2>
+                    <h3>@product.Element("Description").Value</h3>
+                    <h4>Antal kvar: @product.Element("Units").Value</h4><button>Köp</button>
+                </div>
+            </div>
+        }
+    }
+    catch (Exception exception)
+    {
+        using (var streamWriter = new StreamWriter(Paths.PathToExceptionLog(), true))
+        {
+            streamWriter.WriteLine(DateTime.Now + " " + exception.Message);
+        }
+    }
+</div>
