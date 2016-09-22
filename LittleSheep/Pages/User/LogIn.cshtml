@@ -1,17 +1,23 @@
 ﻿@{
-    Layout = null;
+    Layout = "~/Pages/Master.cshtml";
 }
 
-<!DOCTYPE html>
+<div class="pageHeading heading_left">
+    <h1>Logga in</h1>
+</div>
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title></title>
-</head>
-<body>
-    <div>
-    
-    </div>
-</body>
-</html>
+<section>
+    <form action="LogIn.cshtml" method="POST">
+        <label>E-mail</label>
+        <input name="email" type="email">
+
+        <label>Lösenord</label>
+        <input name="password" type="password">
+
+        <input id="submit" name="submit" type="submit" value="Logga in">
+    </form>
+</section>
+
+<div class="clearBoth">
+    <h3><a href="~/Pages/User/CreateAccount.cshtml">Skapa konto</a></h3>
+</div>

@@ -1,17 +1,15 @@
 ﻿@{
-    Layout = null;
+    Layout = "~/Pages/Master.cshtml";
 }
 
-<!DOCTYPE html>
+<div class="pageHeading heading_left">
+    <h1>Konto</h1>
+</div>
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title></title>
-</head>
-<body>
-    <div>
-    
-    </div>
-</body>
-</html>
+@*TODO lägg i try eller ifsats, detta ska vissas om användaren inte är inloggad*@
+<div class="clearBoth">
+    <h3><a href="~/Pages/User/LogIn.cshtml">Logga in</a></h3>
+    <h3><a href="~/Pages/User/CreateAccount.cshtml">Skapa konto</a></h3>
+</div>
+
+

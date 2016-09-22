@@ -8,19 +8,20 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Admin Little Sheep</title>
+    <link href="~/css/style.css" type="text/css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+    <script src="~/scripts/jQuery.js" type="text/javascript"></script>
 </head>
 <body>
-    <header></header>
-    <nav>
-        <ul>
-            <li><a href="~/Pages/Admin/AddPacifierHolder.cshtml">Add new Pacifier Holder</a></li>
-            <li><a href="#">Add new Stroller Accessory</a></li>
-                <ul>
-                    <li><a href="~/Pages/Admin/AddStrollerMobile.cshtml">Add new Stroller Mobile</a></li>
-                    <li><a href="~/Pages/Admin/AddStrollerPendant.cshtml">Add new Stroller Pendant</a></li>
-                </ul>
-        </ul>
-    </nav>
+    <header>
+        <nav>
+            <a class="toggle-nav" href="#">&#9776;</a>
+            <ul class="active">
+                <li><a href="~/Pages/Admin/AddProduct.cshtml">Add new product</a></li>
+            </ul>
+        </nav>
+    </header>
     <div>
         @RenderBody()
     </div>

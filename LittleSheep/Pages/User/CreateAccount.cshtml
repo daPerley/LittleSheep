@@ -41,32 +41,39 @@
     }
 }
 
-<form action="CreateAccount.cshtml" method="POST">
-    <label>Förnamn</label>
-    <input name="firstName">
+<div class="pageHeading heading_left">
+    <h1>Skapa konto</h1>
+</div>
 
-    <label>Efternamn</label>
-    <input name="lastName">
+@*TODO styla formuläret*@
+<section>
+    <form action="CreateAccount.cshtml" method="POST">
+        <label>Förnamn</label>
+        <input name="firstName">
 
-    <label>E-mail</label>
-    <input name="email" type="email">
+        <label>Efternamn</label>
+        <input name="lastName">
 
-    <label>Gatuadress</label>
-    <input name="street">
+        <label>E-mail</label>
+        <input name="email" type="email">
 
-    <label>Postnummer</label>
-    <input name="zipCode" type="number">
+        <label>Gatuadress</label>
+        <input name="street">
 
-    <label>Postort</label>
-    <input name="town">
+        <label>Postnummer</label>
+        <input name="zipCode" type="number">
 
-    <label>Lösenord</label>
-    <input name="password" type="password" >
+        <label>Postort</label>
+        <input name="town">
 
-    <input id="submit" name="submit" type="submit" value="Skapa konto">
-</form>
+        <label>Lösenord</label>
+        <input name="password" type="password">
 
-@if (IsPost)
-{
-    <h2>@message</h2>
-}
+        <input id="submit" name="submit" type="submit" value="Skapa konto">
+    </form>
+
+    @if (IsPost)
+    {
+        <h2>@message</h2>
+    }
+</section>

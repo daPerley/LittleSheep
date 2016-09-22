@@ -9,4 +9,13 @@
     <Town>Gnesta</Town>
     <Password>123</Password>
   </User>
+  <User>
+    <FirstName>Perly</FirstName>
+    <LastName>Gustafsson</LastName>
+    <Email>da.perley@yahoo.com</Email>
+    <Street>Nygatan 17B</Street>
+    <ZipCode>64635</ZipCode>
+    <Town>Gnesta</Town>
+    <Password>123</Password>
+  </User>
 </Users>

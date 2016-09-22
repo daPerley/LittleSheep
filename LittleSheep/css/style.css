@@ -10,6 +10,10 @@ body {
     width: 100%;
 }
 
+.clearBoth {
+    clear: both;
+}
+
 /* ~ Header/Menu ~ */
 
 header {
@@ -228,7 +232,6 @@ nav li:hover .sub-menu {
     zoom: 1; /* For IE 6/7 */
 }
 
-/* PHOTOGRAPHY - DIFFERENT MEDIA WIDTH */
 @media only screen and (max-width: 1350px) {
     .col:nth-child(4n+1) {
         margin-left: 2%;
@@ -294,4 +297,56 @@ nav li:hover .sub-menu {
 
 .productInformation {
     margin: 10px;
+}
+
+/* ~ Form styling ~ */
+form {
+    margin: 0 auto;
+    width: 80%;
+    clear: both;
+}
+
+label {
+    color: #2E1C33;
+    display: block;
+    margin-top: 20px;
+    letter-spacing: 2px;
+    width: 100%;
+}
+
+input, textarea {
+    width: 100%;
+    background: #efefef;
+	border: 1px solid #dedede;
+	padding: 10px;
+	margin-top: 3px;
+	font-size: 0.9em;
+	color: #2E1C33;
+	-moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 50%;
+    min-height: 100px;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border: 1px solid #2E1C33;
+}
+
+#submit {
+    color: #2E1C33;
+    width: 20%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+#submit:hover {
+    opacity:.9;
+    background-color: #6D4278;
 }
