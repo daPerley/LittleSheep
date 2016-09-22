@@ -8,7 +8,7 @@
 }
 
 <div class="pageHeading heading_left">
-    <h1>Napphållare</h1>
+    <h1>Barnvagnstillbehör</h1>
 </div>
 
 <div class="section group">
@@ -16,7 +16,7 @@
     {
         var products = XDocument.Load(Paths.PathToProductsXml());
 
-        foreach (var product in products.Descendants("Product").Where(product => product.Element("Category").Value == "PacifierHolders"))
+        foreach (var product in products.Descendants("Product").Where(product => product.Element("Category").Value != "PacifierHolders"))
         {
             <div class="col">
                 <div class="center"><img class="productImg" src="~/Images/@product.Element("ImageSource").Value" alt="No Image Found" /></div>
@@ -36,4 +36,3 @@
         }
     }
 </div>
-

@@ -7,8 +7,11 @@
     Layout = "~/Pages/Master.cshtml";
 }
 
-<div class="section group">
+<div class="pageHeading heading_left">
+    <h1>Barnvagnshängen</h1>
+</div>
 
+<div class="section group">
     @try
     {
         var products = XDocument.Load(Paths.PathToProductsXml());

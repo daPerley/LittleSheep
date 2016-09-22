@@ -9,15 +9,19 @@
     <meta name="viewport" content="width=device-width" />
     <title>Little Sheep</title>
     <link href="~/css/style.css" type="text/css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+    <script src="~/scripts/jQuery.js" type="text/javascript"></script>
 </head>
 <body>
     <header>
             <nav>
-                <ul class="clearfix">
+                <a class="toggle-nav" href="#">&#9776;</a>
+                <ul class="active">
                     <li><a href="~/Default.cshtml">Start</a></li>
                     <li><a href="~/Pages/Categories/PacifierHolders.cshtml">Napphållare</a></li>
                     <li>
-                        <a href="#">Barnvagnstillbehör <span class="arrow">&#9660;</span></a>
+                        <a href="~/Pages/Categories/StrollerAccessories.cshtml">Barnvagnstillbehör <span class="arrow">&#9660;</span></a>
                         <ul class="sub-menu">
                             <li><a href="~/Pages/Categories/StrollerMobiles.cshtml">Barnvagnsmobiler</a></li>
                             <li><a href="~/Pages/Categories/StrollerPendants.cshtml">Barnvagnshängen</a></li>

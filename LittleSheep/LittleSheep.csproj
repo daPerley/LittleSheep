@@ -138,6 +138,7 @@
     <Content Include="Pages\Cart\ViewCart.cshtml" />
     <Content Include="Pages\Cart\CheckOut.cshtml" />
     <Content Include="Pages\Admin\AddProduct.cshtml" />
+    <Content Include="Pages\Categories\StrollerAccessories.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -154,6 +155,7 @@
     <Content Include="Logs\exceptions.txt" />
     <Content Include="scripts\ai.0.22.19-build00125.js" />
     <Content Include="scripts\ai.0.22.19-build00125.min.js" />
+    <Content Include="scripts\jQuery.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
