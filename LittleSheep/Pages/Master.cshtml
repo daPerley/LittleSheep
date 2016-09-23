@@ -15,22 +15,29 @@
 </head>
 <body>
     <header>
-            <nav>
-                <a class="toggle-nav" href="#">&#9776;</a>
-                <ul class="active">
-                    <li><a href="~/Default.cshtml">Start</a></li>
-                    <li><a href="~/Pages/Categories/PacifierHolders.cshtml">Napphållare</a></li>
-                    <li>
-                        <a href="~/Pages/Categories/StrollerAccessories.cshtml">Barnvagnstillbehör <span class="arrow">&#9660;</span></a>
-                        <ul class="sub-menu">
-                            <li><a href="~/Pages/Categories/StrollerMobiles.cshtml">Barnvagnsmobiler</a></li>
-                            <li><a href="~/Pages/Categories/StrollerPendants.cshtml">Barnvagnshängen</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="~/Pages/User/ViewAccount.cshtml">Konto</a></li>
-                    <li><a href="~/Pages/Cart/ViewCart.cshtml">Varukorg</a></li>
-                </ul>
-            </nav>
+        <div class="header_image">
+            <div class="headerMascot">
+                <a title="By creohn, Michał Pecyna (Original image: [1]; description page: [2]) [Public domain], via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File%3ASheep_in_gray.svg">
+                    <img alt="Sheep in gray" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Sheep_in_gray.svg/256px-Sheep_in_gray.svg.png" />
+                </a>
+            </div>
+        </div>
+        <nav>
+            <a class="toggle-nav" href="#">&#9776;</a>
+            <ul class="active">
+                <li><a href="~/Default.cshtml">Start</a></li>
+                <li><a href="~/Pages/Categories/PacifierHolders.cshtml">Napphållare</a></li>
+                <li>
+                    <a href="~/Pages/Categories/StrollerAccessories.cshtml">Barnvagnstillbehör <span class="arrow">&#9660;</span></a>
+                    <ul class="sub-menu">
+                        <li><a href="~/Pages/Categories/StrollerMobiles.cshtml">Barnvagnsmobiler</a></li>
+                        <li><a href="~/Pages/Categories/StrollerPendants.cshtml">Barnvagnshängen</a></li>
+                    </ul>
+                </li>
+                <li><a href="~/Pages/User/ViewAccount.cshtml">Konto</a></li>
+                <li><a href="~/Pages/Cart/ViewCart.cshtml">Varukorg</a></li>
+            </ul>
+        </nav>
     </header>
     <div>
         @RenderBody()

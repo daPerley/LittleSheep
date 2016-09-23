@@ -3,49 +3,73 @@
   <Product>
     <Category>PacifierHolders</Category>
     <Name>Chevron</Name>
-    <Description>Stilren napphållare med ett chevronmönster i blått och rosa</Description>
-    <Price>99</Price>
-    <Units>1</Units>
-    <ImageSource>noImageFound.jpg</ImageSource>
-  </Product>
-  <Product>
-    <Category>StrollerPendants</Category>
-    <Name>Rockuggla</Name>
-    <Description>Rockigt ugglehänge med blå accentfärg som piggar upp vilken barnvagn som helst!</Description>
+    <Description>Stilren napphållare med ett rosa blått chevron mönster.</Description>
     <Price>75</Price>
     <Units>1</Units>
-    <ImageSource>noImageFound.jpg</ImageSource>
+    <ImageSource>img01.jpeg</ImageSource>
   </Product>
   <Product>
     <Category>PacifierHolders</Category>
     <Name>Natur</Name>
-    <Description>Fin napphållare med naturinspirerat tryck med fåglar, giraffer och blad</Description>
-    <Price>99</Price>
+    <Description>En söt napphållare med giraffer och fåglar på en vit bas.</Description>
+    <Price>75</Price>
     <Units>1</Units>
-    <ImageSource>noImageFound.jpg</ImageSource>
+    <ImageSource>img02.jpeg</ImageSource>
   </Product>
   <Product>
     <Category>PacifierHolders</Category>
-    <Name>Gröna Jordgubbar</Name>
-    <Description>En fin nästan mintgrön napphållare med jordgubbstryck</Description>
-    <Price>99</Price>
+    <Name>Jordgubbar</Name>
+    <Description>Ett grönblått band med ett sött jordgubbstryck i samma färgskala.</Description>
+    <Price>75</Price>
     <Units>1</Units>
-    <ImageSource>noImageFound.jpg</ImageSource>
+    <ImageSource>img03.jpeg</ImageSource>
   </Product>
   <Product>
-    <Category>PacifierHolders</Category>
-    <Name>Rymden</Name>
-    <Description>Napphållare med rymdtryck!</Description>
-    <Price>99</Price>
-    <Units>2</Units>
-    <ImageSource>noImageFound.jpg</ImageSource>
+    <Category>StrollerMobiles</Category>
+    <Name>Turkos</Name>
+    <Description>Fin barnvagnsmobil i turkost och natur med virkade kulor istället för ett band.</Description>
+    <Price>350</Price>
+    <Units>1</Units>
+    <ImageSource>img08.jpeg</ImageSource>
   </Product>
   <Product>
-    <Category>PacifierHolders</Category>
-    <Name>Mops</Name>
-    <Description>Söt napphållare med mopstryck</Description>
-    <Price>99</Price>
-    <Units>2</Units>
-    <ImageSource>noImageFound.jpg</ImageSource>
+    <Category>StrollerMobiles</Category>
+    <Name>Naturlig</Name>
+    <Description>Beige barnvagnsmobil med orange och turkos accent.</Description>
+    <Price>300</Price>
+    <Units>1</Units>
+    <ImageSource>img09.jpeg</ImageSource>
+  </Product>
+  <Product>
+    <Category>StrollerPendants</Category>
+    <Name>Natur</Name>
+    <Description>Naturfärgad uggla med turkos accent. Säljes billigare pga. annorlunda form.</Description>
+    <Price>75</Price>
+    <Units>1</Units>
+    <ImageSource>img04.jpeg</ImageSource>
+  </Product>
+  <Product>
+    <Category>StrollerPendants</Category>
+    <Name>Natur</Name>
+    <Description>Naturfärgad uggla med turkos accent.</Description>
+    <Price>100</Price>
+    <Units>1</Units>
+    <ImageSource>img07.jpeg</ImageSource>
+  </Product>
+  <Product>
+    <Category>StrollerPendants</Category>
+    <Name>Cool</Name>
+    <Description>Cool uggla i svart/grått med turkos accent som tuffar till vilken barnvagn som helst!</Description>
+    <Price>100</Price>
+    <Units>1</Units>
+    <ImageSource>img06.jpeg</ImageSource>
+  </Product>
+  <Product>
+    <Category>StrollerPendants</Category>
+    <Name>Rockuggla</Name>
+    <Description>Rockigare uggla i naturvitt och svart accent.</Description>
+    <Price>100</Price>
+    <Units>1</Units>
+    <ImageSource>img05.jpeg</ImageSource>
   </Product>
 </Products>

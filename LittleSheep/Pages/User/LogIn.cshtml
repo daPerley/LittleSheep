@@ -1,5 +1,29 @@
-﻿@{
+﻿@using LittleSheep.Entities
+@using LittleSheep.Users
+
+@{
     Layout = "~/Pages/Master.cshtml";
+
+    var message = string.Empty;
+
+    if (IsPost)
+    {
+        var email = Request.Form["email"];
+        var password = Request.Form["password"];
+
+        //todo validate on client and server side
+
+        UserRepository userRepository = new UserRepository();
+
+        if (userRepository.LogInToAccount(email, password))
+        {
+            message = "Inloggning lyckad";
+        }
+        else
+        {
+            message = "De inmattade uppgifterna verkar inte stämma.";
+        }
+    }
 }
 
 <div class="pageHeading heading_left">
@@ -14,10 +38,12 @@
         <label>Lösenord</label>
         <input name="password" type="password">
 
-        <input id="submit" name="submit" type="submit" value="Logga in">
+        <input id="submit" name="submit" type="submit" value="Logga in"> 
+        <h3>Inget konto ännu? Ingen fara, <a href="~/Pages/User/CreateAccount.cshtml">skapa konto här</a>.</h3>
     </form>
-</section>
 
-<div class="clearBoth">
-    <h3><a href="~/Pages/User/CreateAccount.cshtml">Skapa konto</a></h3>
-</div>
+    @if (IsPost)
+    {
+        <h2>@message</h2>
+    }
+</section>

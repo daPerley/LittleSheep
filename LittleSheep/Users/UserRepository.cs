@@ -2,6 +2,7 @@
 using LittleSheep.Entities;
 using System;
 using System.IO;
+using System.Linq;
 using System.Xml.Linq;
 
 namespace LittleSheep.Users
@@ -63,14 +64,34 @@ namespace LittleSheep.Users
             }
         }
 
-        public static void EditExistingProduct()
+        public bool LogInToAccount(string email, string password)
         {
+            try
+            {
+                if (File.Exists(Paths.PathToUsersXml()))
+                {
+                    var xDocument = XDocument.Load(Paths.PathToUsersXml());
 
-        }
+                    foreach (var user in xDocument.Descendants("User").Where(aa => aa.Element("Email").Value == email))
+                    {
+                        if (user.Element("Password").Value == password)
+                        {
+                            return true;
+                        }
+                    }
+                }
 
-        public static void DeleteExistingProduct()
-        {
+                return false;
+            }
+            catch (Exception exception)
+            {
+                using (var streamWriter = new StreamWriter(Paths.PathToExceptionLog(), true))
+                {
+                    streamWriter.WriteLine(DateTime.Now + " " + exception.Message);
+                }
 
+                return false;
+            }
         }
     }
 }

@@ -122,6 +122,16 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Images\45.jpg" />
+    <Content Include="Images\img01.jpeg" />
+    <Content Include="Images\img02.jpeg" />
+    <Content Include="Images\img03.jpeg" />
+    <Content Include="Images\img04.jpeg" />
+    <Content Include="Images\img05.jpeg" />
+    <Content Include="Images\img06.jpeg" />
+    <Content Include="Images\img07.jpeg" />
+    <Content Include="Images\img08.jpeg" />
+    <Content Include="Images\img09.jpeg" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
