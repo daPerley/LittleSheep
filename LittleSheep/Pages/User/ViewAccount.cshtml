@@ -1,4 +1,6 @@
-﻿@{
+﻿@using LittleSheep.Users
+
+@{
     Layout = "~/Pages/Master.cshtml";
 }
 
@@ -8,8 +10,19 @@
 
 @*TODO lägg i try eller ifsats, detta ska vissas om användaren inte är inloggad*@
 <div class="clearBoth">
-    <h3>Det verkar som att du inte är inloggad, <a href="~/Pages/User/LogIn.cshtml">logga in</a>.</h3>
-    <h3>Inget konto ännu? Ingen fara, <a href="~/Pages/User/CreateAccount.cshtml">skapa konto här</a>.</h3>
+    @if (UserRepository.loggedIn == true)
+    {
+        <h3>Namn: </h3> @UserRepository.activeUser.Element("FirstName").Value <p> </p> @UserRepository.activeUser.Element("LastName").Value
+        <h3>Email: </h3> @UserRepository.activeUser.Element("Email").Value
+        <h3>Gatuadress: </h3> @UserRepository.activeUser.Element("Street").Value
+        <h3>Postnummer: </h3> @UserRepository.activeUser.Element("ZipCode").Value
+        <h3>Postadress: </h3> @UserRepository.activeUser.Element("Town").Value
+    }
+    else
+    {
+        <h3>Det verkar som att du inte är inloggad, <a href="~/Pages/User/LogIn.cshtml">logga in</a>.</h3>
+        <h3>Inget konto ännu? Ingen fara, <a href="~/Pages/User/CreateAccount.cshtml">skapa konto här</a>.</h3>
+    }
 </div>
 
 

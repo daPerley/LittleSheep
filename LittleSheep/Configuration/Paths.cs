@@ -9,17 +9,17 @@ namespace LittleSheep.Configuration
     {
         public static string PathToProductsXml()
         {
-            return @"H:\Nackademin\C#\v38\LittleSheep\LittleSheep\Database\products.xml";
+            return @"D:\Nackademin\C#\v38\LittleSheep\LittleSheep\Database\products.xml";
         }
 
         public static string PathToUsersXml()
         {
-            return @"H:\Nackademin\C#\v38\LittleSheep\LittleSheep\Database\users.xml";
+            return @"D:\Nackademin\C#\v38\LittleSheep\LittleSheep\Database\users.xml";
         }
 
         public static string PathToOrdersXml()
         {
-            return @"H:\Nackademin\C#\v38\LittleSheep\LittleSheep\Database\orders.xml";
+            return @"D:\Nackademin\C#\v38\LittleSheep\LittleSheep\Database\orders.xml";
         }
 
         public static string PathToExceptionLog()

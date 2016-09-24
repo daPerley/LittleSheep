@@ -1,4 +1,6 @@
-﻿@{
+﻿@using LittleSheep.Users
+
+@{
     Layout = null;
 }
 
@@ -36,6 +38,14 @@
                 </li>
                 <li><a href="~/Pages/User/ViewAccount.cshtml">Konto</a></li>
                 <li><a href="~/Pages/Cart/ViewCart.cshtml">Varukorg</a></li>
+                @if (UserRepository.loggedIn == true)
+                {
+                    <li><a href="~/Pages/User/LogIn.cshtml" onclick="@UserRepository.loggedIn = false @*make the current user null here to*@ ">Logga ut</a></li>
+                }
+                else if (UserRepository.loggedIn == false)
+                {
+                    <li><a href="~/Pages/User/LogIn.cshtml">Logga in</a></li>
+                }
             </ul>
         </nav>
     </header>

@@ -9,6 +9,9 @@ namespace LittleSheep.Users
 {
     public class UserRepository
     {
+        public static bool loggedIn = false;
+        public static XElement activeUser;
+
         public bool AddNewUser(User account)
         {
             try
@@ -76,6 +79,8 @@ namespace LittleSheep.Users
                     {
                         if (user.Element("Password").Value == password)
                         {
+                            activeUser = user;
+                            loggedIn = true;
                             return true;
                         }
                     }
